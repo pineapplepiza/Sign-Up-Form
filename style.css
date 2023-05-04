@@ -1,15 +1,38 @@
 .content {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    
+    width: 100vw;
+    height: 100vh;
+    
 }
 
 .main-photo {
-    width: 40%;
+    width: 40vw;
+    height: 100vh
+}
+
+.left-side {
+    
     
 }
 
 .right-side {
-    width: 60%;
-    color: rgb(0, 28, 77);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    
+    width: 60vw;
+    background-color: rgb(1, 10, 26);
+    
+}
+
+.top-text {
+    color:grey;
+}
+
+.input {
+    color: rgb(243, 33, 114);
+    padding: 5px;
 }
 
