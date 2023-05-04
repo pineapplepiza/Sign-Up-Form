@@ -1,0 +1,15 @@
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-photo {
+    width: 40%;
+    
+}
+
+.right-side {
+    width: 60%;
+    color: rgb(0, 28, 77);
+}
+
