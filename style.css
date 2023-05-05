@@ -1,3 +1,15 @@
+@font-face {
+    font-family: my-japan-font;
+    src: url(../Sign-Up-Form/fonts/osaka-re);
+  }
+  
+  .top-text {
+    font-family: my-japan-font, sans-serif;
+    font-size: 40px;
+    color:rgb(253, 11, 168);
+    text-align: center;
+  }
+
 .content {
     display: flex;
     flex-direction: row;
@@ -27,12 +39,24 @@
     
 }
 
-.top-text {
-    color:grey;
-}
 
 .input {
     color: rgb(243, 33, 114);
     padding: 5px;
+    display: flex;
+    flex-flow: column wrap;
+    margin: 10px;
+}
+
+form {
+    display: flex;
+    flex-flow: row wrap;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.login-link {
+    color: aqua;
+    display: flex;
+    flex-flow: wrap;
 }
 
