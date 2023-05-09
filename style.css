@@ -1,14 +1,21 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
 @font-face {
     font-family: my-japan-font;
     src: url(../Sign-Up-Form/fonts/osaka-re);
   }
   
-  .top-text {
+.top-text {
     font-family: my-japan-font, sans-serif;
     font-size: 40px;
     color:rgb(253, 11, 168);
     text-align: center;
-  }
+    /* padding-bottom: 30px; */
+}
 
 .content {
     display: flex;
@@ -24,10 +31,6 @@
     height: 100vh
 }
 
-.left-side {
-    
-    
-}
 
 .right-side {
     display: flex;
@@ -36,6 +39,8 @@
     
     width: 60vw;
     background-color: rgb(1, 10, 26);
+
+    padding-left: 3vw; /* Temporary Check */
     
 }
 
@@ -46,17 +51,60 @@
     display: flex;
     flex-flow: column wrap;
     margin: 10px;
+    width: 40%;
+}
+
+.input input {
+    border: 2px aqua; /* NOT WORKING! */
 }
 
 form {
     display: flex;
     flex-flow: row wrap;
     font-family: Arial, Helvetica, sans-serif;
+    
+    /* justify-content: center; */
+    
 }
 
 .login-link {
     color: aqua;
     display: flex;
     flex-flow: wrap;
+    align-content: center;
+    /* margin-left: 15px; */
+    gap: 5px;
 }
 
+.login-link a {
+    /* display: inline-block; */ /* What does this do? */
+    justify-self: center; /* not working hmm */
+    color: aliceblue;
+    align-self: center;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    color: rgb(253, 11, 168)
+}
+
+.create-acc-btn {
+    width: 300px;
+    margin: 15px;
+    
+}
+
+.create-acc-btn button {
+    color:rgb(253, 11, 168);
+    background-color: rgb(1, 10, 26);
+    border: 2px solid rgb(253, 11, 168);
+    border-radius: 3px;
+
+    padding: 10px 40px;
+    margin: 40px 0;
+}
+
+.create-acc-btn button:hover {
+    background-color: rgb(253, 11, 168);
+    color: rgb(1, 10, 26);
+}
