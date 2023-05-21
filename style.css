@@ -14,7 +14,8 @@ html, body {
     font-size: 40px;
     color:rgb(253, 11, 168);
     text-align: center;
-    /* padding-bottom: 30px; */
+    align-self: left;
+    padding-right: 75px;
 }
 
 .content {
@@ -40,8 +41,30 @@ html, body {
     width: 60vw;
     background-color: rgb(1, 10, 26);
 
-    padding-left: 3vw; /* Temporary Check */
+    padding-left: 3vw; 
     
+}
+
+.logo {
+    display: flex;
+    position: absolute;
+    top: 20vh;
+    background-color: rgba(0,0,0,0.6);
+    width: 40vw;
+    align-items: center;
+}
+
+.shiba {
+    opacity: 1;
+    width: 10vw;
+    height: auto;
+    margin-left: 10vw;
+}
+
+.shiba-text {
+    color: rgb(82, 237, 76);
+    font-size: 50px;
+    margin-left: 10px;
 }
 
 
@@ -55,15 +78,19 @@ html, body {
 }
 
 .input input {
-    border: 2px aqua; /* NOT WORKING! */
+    border-radius: 5px;
+}
+
+.input input:hover {
+    border-color:aqua; 
+    border-radius: 2px;
+    
 }
 
 form {
     display: flex;
     flex-flow: row wrap;
     font-family: Arial, Helvetica, sans-serif;
-    
-    /* justify-content: center; */
     
 }
 
@@ -72,12 +99,11 @@ form {
     display: flex;
     flex-flow: wrap;
     align-content: center;
-    /* margin-left: 15px; */
+    margin-left: 15px;
     gap: 5px;
 }
 
 .login-link a {
-    /* display: inline-block; */ /* What does this do? */
     justify-self: center; /* not working hmm */
     color: aliceblue;
     align-self: center;
